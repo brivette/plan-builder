@@ -15,11 +15,12 @@ class App extends React.Component {
       } 
     }
   }
+  
   render() {
     return (
       <div className="App">
         <NavigationBar 
-          name = 'Brian'
+          name = 'Brian Rivette'
         />
         <Component
          componentName = {this.state.component.name}
