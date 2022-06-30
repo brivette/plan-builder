@@ -1,0 +1,96 @@
+.body {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.app {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f5f2f2;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  padding: 0.3rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 8rem;
+  background-color: #0d9dda;
+  color: #f5f2f2;
+}
+
+.component {
+  margin: 0.85rem;
+  padding: 0.85rem;
+  width: 30%;
+  height: 35%;
+  background-color: #032d60;
+  color: #f5f2f2;
+  text-align: center;
+  filter: drop-shadow(2px 2px 2px #59575c);
+}
+.component .header {
+  display: flex;
+  order: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-start;
+  align-items: center;
+}
+.component h1 {
+  font-size: 4.5rem;
+  font-weight: 450;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+}
+.component h2 {
+  font-size: 1.95rem;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #90d0fe;
+  font-weight: 100;
+}
+.component span {
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.midbar .container {
+  display: flex;
+  order: 3;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-start;
+  align-items: center;
+}
+.midbar .item {
+  font-weight: 550;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-right: 1px solid #f5f2f2;
+  padding: 1em;
+  margin-top: 1rem;
+}
+
+.bottombar {
+  margin-top: 1.5rem;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.soicon {
+  --sds-c-icon-color-background: #0d9dda;
+}
+
+/*# sourceMappingURL=app.css.map */

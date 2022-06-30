@@ -1,0 +1,122 @@
+// COLORS //
+
+$font-large: 2.5rem;
+$font-medium: 1.25rem;
+$font-small: .85rem;
+
+
+$blue-1: #0d9dda;
+$salesforce-blue: $blue-1;
+
+$blue-2: #032d60;
+$blue-3: #0176d3;
+$blue-4: #90d0fe;
+
+$neutral-1: #f5f2f2;
+$neutral-2: #59575c;
+
+$sf-red: #8a033e;
+$sf-green: #396547;
+$sf-yellow: #e4a201;
+
+.body {
+    display: grid;
+    grid-gap: 1em;
+}
+
+.app {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: $neutral-1;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    font-size: $font-medium;
+    padding: .3rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: $blue-1;
+    color: $neutral-1;
+}
+
+.component {
+    margin: .85rem;
+    padding: .85rem;
+    width:30%;
+    height: 35%;
+    background-color: $blue-2;
+    color: $neutral-1;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px $neutral-2);
+
+    .header {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-self: flex-start;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 450;
+        letter-spacing: .5rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 1.95rem;
+        padding: .2rem;
+        margin-bottom: .5rem;
+        border-bottom: 1px solid $blue-4;
+        font-weight: 100;
+    }
+
+    span {
+        letter-spacing: .1rem;
+        font-weight: 100;
+        margin-top: 1rem;
+        font-style: italic;
+    }
+}
+
+.midbar {
+    .container {
+        display: flex;
+        order: 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-self: flex-start;
+        align-items: center;
+    }
+    .item {
+        font-weight: 550;
+        flex-grow: 1;
+        flex-shrink: 1;
+        // border: 1px solid $neutral-1;
+        border-right: 1px solid $neutral-1;
+        padding: 1em;
+        margin-top: 1rem;
+        }
+}
+
+.bottombar {
+    margin-top: 1.5rem;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.soicon {
+    --sds-c-icon-color-background: #0d9dda; //action icons or custom icons
+}
