@@ -7,16 +7,22 @@ import Bottombar from "./Bottombar";
 function Component(props) {
     return (
         <div className="component">
-        <ComponentTitle />
-         <TIbar 
+        <ComponentTitle 
+            componentName = {props.componentName}
+
+        />
+        <div className="split">
+            <TIbar 
             componentName={props.componentName}
             weight={props.weight}
-         />
-        <Midbar 
+            />
+            
+            <Midbar 
             quota = {props.quota}
             period = {props.period}
             multiplier = {props.multiplier}
-        />
+            />
+        </div>
         <Bottombar
             componentName = {props.componentName}
             />

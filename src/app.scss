@@ -30,7 +30,6 @@ $sf-yellow: #e4a201;
 }
 
 
-
 h2 {
     font-size: $font-medium;
     padding: .3rem;
@@ -104,13 +103,20 @@ h2 {
         margin-top: 1rem;
         font-style: italic;
     }
+
+    .split {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
 }
 
 .midbar {
     .container {
         display: flex;
         order: 3;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         align-self: flex-start;
@@ -121,9 +127,9 @@ h2 {
         flex-grow: 1;
         flex-shrink: 1;
         // border: 1px solid $neutral-1;
-        border-right: 1px solid $neutral-1;
-        padding: 1em;
-        margin-top: 1rem;
+        // border-right: 1px solid $neutral-1;
+        padding: .5em;
+        margin-top: .5rem;
         }
 }
 

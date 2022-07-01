@@ -75,11 +75,17 @@ h2 {
   margin-top: 1rem;
   font-style: italic;
 }
+.component .split {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
 
 .midbar .container {
   display: flex;
   order: 3;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-self: flex-start;
@@ -89,9 +95,8 @@ h2 {
   font-weight: 550;
   flex-grow: 1;
   flex-shrink: 1;
-  border-right: 1px solid #f5f2f2;
-  padding: 1em;
-  margin-top: 1rem;
+  padding: 0.5em;
+  margin-top: 0.5rem;
 }
 
 .bottombar {
