@@ -1,33 +1,33 @@
-import { PieChart } from 'react-minimal-pie-chart';
+import { VictoryLabel, VictoryPie } from 'victory';
 
-const shiftSize = 1;
 
-function PieChartSection(props) {
 
-  const defaultLabelStyle = {
-    fontSize: '.45rem',
-    fontFamily: 'default',
-    
-  };
+function PieChart(props) {
+  const data = [
+    { x: props.componentName, y: props.weight, name: props.componentName },
+    { x: props.componentName2, y: props.weight2, name: props.componentName2 },
+   ]  
 
   return (
     <div className='pie-landscape'>
-<PieChart
-  data={[
-    { value: props.weight, color: props.color, component: props.componentName },
-    {value: props.weight2, color: props.color2, component: props.componentName2 },
-  ]}
-    lineWidth="90"
-    totalvalue="100"
-    style={{ width: '75%' }}
-    radius={PieChart.defaultProps.radius - shiftSize}
-    label={({ dataEntry }) => dataEntry.component}
-    labelStyle={{
-      ...defaultLabelStyle,
-    }}
-  />
+      <VictoryPie
+        data = {data}
+        colorScale={[ "#0d9dda", "#032d60", "#0176d3"  ]}
+        labels={({ datum }) => `${datum.x} \n ${datum.y}%`}
+        labelPosition={({ index }) => index
+          ? "centroid"
+          : "centroid"
+          }
+        labelComponent={
+          <VictoryLabel
+            lineHeight={1}
+            style={ [{ fontSize: 18 } ]}
+            verticalAnchor="middle"
+    />
+  }
+    />
   </div>
   )
 }
 
-export default PieChartSection;
+export default PieChart;

@@ -30,7 +30,7 @@ $drop-shadow-default: drop-shadow(1.5px 1.5px 1.5px $neutral-2);
 .pie-landscape {
     height: 100%;
     width: 25%;
-    margin: 5%;
+    margin: 3.5%;
 
 }
 
@@ -125,9 +125,7 @@ h2 {
 
     .split {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        justify-content:space-around;
     }
 
     .tibar {
@@ -140,20 +138,16 @@ h2 {
 .midbar {
     .container {
         display: flex;
-        order: 3;
+        order: 2;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-self: center;
         align-items: center;
         padding-right: 2rem;
     }
     .item {
         font-weight: 550;
-        flex-grow: 1;
-        flex-shrink: 1;
-        // border: 1px solid $neutral-1;
-        // border-right: 1px solid $neutral-1;
         padding: .5em;
         margin-top: .5rem;
         }

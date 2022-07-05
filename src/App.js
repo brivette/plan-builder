@@ -1,5 +1,5 @@
 import NavigationBar from './components/NavigationBar';
-import PieChartSection from './components/Piechart';
+import PieChart from './components/Piechart';
 import Component from './components/Component';
 import './App.css';
 import React from 'react';
@@ -47,7 +47,7 @@ class App extends React.Component {
           
         />
         <div className='main'>
-        <PieChartSection 
+        <PieChart 
           componentName = {compName}
           componentName2 = {compName2}
           color = {color}

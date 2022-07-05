@@ -6,7 +6,7 @@
 .pie-landscape {
   height: 100%;
   width: 25%;
-  margin: 5%;
+  margin: 3.5%;
 }
 
 .app {
@@ -92,9 +92,7 @@ h2 {
 }
 .component .split {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  justify-content: space-around;
 }
 .component .tibar {
   padding-top: 10%;
@@ -104,18 +102,16 @@ h2 {
 
 .midbar .container {
   display: flex;
-  order: 3;
+  order: 2;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-self: center;
   align-items: center;
   padding-right: 2rem;
 }
 .midbar .item {
   font-weight: 550;
-  flex-grow: 1;
-  flex-shrink: 1;
   padding: 0.5em;
   margin-top: 0.5rem;
 }
