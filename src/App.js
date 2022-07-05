@@ -11,20 +11,34 @@ class App extends React.Component {
     super(props);
     this.state = {
       component: {
-        name: "Success Plan Attach",
-        description: "Premierable ACV with Premier attached as a percent of total premierable ACV on closed won opportunities within assigned scope.",
-        strategicObjective: "Growth",
-        targetType: "%",
-        color: `#0d9dda`,
-        tiweight: 75
+          one: {
+            name: "Success Plan Attach",
+            description: "Premierable ACV with Premier attached as a percent of total premierable ACV on closed won opportunities within assigned scope.",
+            strategicObjective: "Growth",
+            targetType: "%",
+            color: `#0d9dda`,
+            tiweight: 75
+          },
+          two: {
+            name: "ACV",
+            description: "Premierable ACV with Premier attached as a percent of total premierable ACV on closed won opportunities within assigned scope.",
+            strategicObjective: "Growth",
+            targetType: "%",
+            color: `#0176d3`,
+            tiweight: 25
+          }
       } 
     }
   }
   
   render() {
-    const compName = this.state.component.name;
-    const color = this.state.component.color;
-    const tiweight = this.state.component.tiweight;
+    const compName = this.state.component.one.name;
+    const color = this.state.component.one.color;
+    const tiweight = this.state.component.one.tiweight;
+
+    const compName2 = this.state.component.two.name;
+    const color2 = this.state.component.two.color;
+    const tiweight2 = this.state.component.two.tiweight;
 
     return (
       <div className="App">
@@ -32,10 +46,14 @@ class App extends React.Component {
           name = 'Brian Rivette'
           
         />
+        <div className='main'>
         <PieChartSection 
           componentName = {compName}
+          componentName2 = {compName2}
           color = {color}
+          color2 = {color2}
           weight = {tiweight}
+          weight2 = {tiweight2}
           />
         <Component
          componentName = {compName}
@@ -44,7 +62,14 @@ class App extends React.Component {
          period = 'Cumulative Tier'
          multiplier = '1.5x'
          />
-         
+         <Component
+         componentName = {compName2}
+         weight = '25' 
+         quota = '$122,500 USD'
+         period = 'Cumulative Tier'
+         multiplier = '1.5x'
+         />
+         </div>
       </div>
     );
   }

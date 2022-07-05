@@ -12,6 +12,7 @@ function Component(props) {
 
         />
         <div className="split">
+            
             <TIbar 
             componentName={props.componentName}
             weight={props.weight}
