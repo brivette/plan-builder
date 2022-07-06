@@ -9,7 +9,7 @@ function Component(props) {
         <div className="component">
         <ComponentTitle 
             componentName = {props.componentName}
-
+            strategicObjective = {props.strategicObjective}
         />
         <div className="split">
             

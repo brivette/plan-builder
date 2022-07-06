@@ -14,7 +14,7 @@ class App extends React.Component {
           one: {
             name: "Success Plan Attach",
             description: "Premierable ACV with Premier attached as a percent of total premierable ACV on closed won opportunities within assigned scope.",
-            strategicObjective: "Growth",
+            strategicObjective: "Customer Success",
             targetType: "%",
             color: `#0d9dda`,
             tiweight: 75
@@ -35,10 +35,13 @@ class App extends React.Component {
     const compName = this.state.component.one.name;
     const color = this.state.component.one.color;
     const tiweight = this.state.component.one.tiweight;
+    const strategicObjective = this.state.component.one.strategicObjective;
 
     const compName2 = this.state.component.two.name;
     const color2 = this.state.component.two.color;
     const tiweight2 = this.state.component.two.tiweight;
+    const strategicObjective2 = this.state.component.two.strategicObjective;
+
 
     return (
       <div className="App">
@@ -61,6 +64,7 @@ class App extends React.Component {
          quota = '$2,500 USD'
          period = 'Cumulative Tier'
          multiplier = '1.5x'
+         strategicObjective = {strategicObjective}
          />
          <Component
          componentName = {compName2}
@@ -68,6 +72,7 @@ class App extends React.Component {
          quota = '$122,500 USD'
          period = 'Cumulative Tier'
          multiplier = '1.5x'
+         strategicObjective = {strategicObjective2}
          />
          </div>
       </div>
