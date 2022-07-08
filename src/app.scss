@@ -31,7 +31,6 @@ $drop-shadow-default: drop-shadow(1.5px 1.5px 1.5px $neutral-2);
     height: 100%;
     width: 25%;
     margin: 3.5%;
-
 }
 
 .app {
@@ -42,6 +41,11 @@ $drop-shadow-default: drop-shadow(1.5px 1.5px 1.5px $neutral-2);
 h2 {
     font-size: $font-medium;
     padding: .3rem;
+}
+
+.split {
+    display: flex;
+    justify-content: space-around;
 }
 
 .navbar {
@@ -63,12 +67,22 @@ h2 {
         margin: 5px;
     }
 
-    .flex {
+    span
+     {
+        padding: .25rem;
+        font-size: $font-medium;
+    }
+
+    select {
+        font-size: 14pt;
+        background-color: transparent;
+        padding: 5pt;
+        border: 1px $blue-1 solid;
+    }
+
+    .links {
         display: flex;
-        order: 2;
-        flex-direction: row;
-        align-self: flex-start;
-        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -79,7 +93,6 @@ h2 {
     align-self: flex-start;
     align-items:flex-start;
 }
-
 
 .component {
     margin: 1.85rem;
@@ -121,11 +134,6 @@ h2 {
         font-weight: 100;
         margin-top: 1rem;
         font-style: italic;
-    }
-
-    .split {
-        display: flex;
-        justify-content:space-around;
     }
 
     .tibar {
