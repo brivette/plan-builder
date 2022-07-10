@@ -18,9 +18,9 @@ function NavigationBar(props) {
                     Welcome, {props.name}
                 </h2>
                     <div className="links">
-                    <option value="grapefruit">Incentive Compensation Plan</option>
-                    <option value="lime">Commission Estimator</option>
-                    <option value="coconut">Resources</option>
+                        <option value="grapefruit">Incentive Compensation Plan | </option>
+                        <option value="lime">Commission Estimator | </option>
+                        <option value="coconut">Resources</option>
                     </div>
             </div>
        </div>

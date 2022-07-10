@@ -82,9 +82,20 @@ h2 {
 
     .links {
         display: flex;
+        justify-content: space-around;
+        margin-right: .5rem;
+        font-size: 11.5pt;
+        font-weight: 700;
+    }
+
+    .flex-end {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 }
+
+
 
 .main {
     display: flex;
@@ -164,8 +175,18 @@ h2 {
 .bottombar {
     margin-top: 1.5rem;
     text-align: left;
-    text-decoration: underline;
+
+    .payoutLink {
+        font-weight: 600;
+        margin: .5rem;
+        padding: 10px;
+        background-color: transparent;
+        color: $neutral-1;
+        border: 1px solid $neutral-1;
+        border-radius: 10px;
+    }
 }
+
 
 .soicon {
     --sds-c-icon-color-background:#0d9dda;

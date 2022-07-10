@@ -24,8 +24,8 @@ function Component(props) {
             multiplier = {props.multiplier}
             />
         </div>
-        <Bottombar
-            componentName = {props.componentName}
+        <Bottombar 
+            componentName = {props.componentName} 
             />
        </div>
     )
